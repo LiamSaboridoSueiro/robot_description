@@ -90,6 +90,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         front_left_wheel_link:
           Alpha: 1
           Show Axes: false
@@ -111,6 +115,37 @@ Visualization Manager:
           Show Trail: false
           Value: true
         root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sensor_arm_camera_camera_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sensor_arm_camera_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sensor_arm_camera_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sensor_front_camera_camera_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sensor_front_camera_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sensor_front_camera_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sensor_imu__link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -140,6 +175,8 @@ Visualization Manager:
           Value: true
         back_right_wheel_link:
           Value: true
+        base_footprint:
+          Value: true
         front_left_wheel_link:
           Value: true
         front_right_wheel_link:
@@ -150,35 +187,60 @@ Visualization Manager:
           Value: true
         root:
           Value: true
+        sensor_arm_camera_camera_base_link:
+          Value: true
+        sensor_arm_camera_camera_frame:
+          Value: true
+        sensor_arm_camera_camera_optical_frame:
+          Value: true
+        sensor_front_camera_camera_base_link:
+          Value: true
+        sensor_front_camera_camera_frame:
+          Value: true
+        sensor_front_camera_camera_optical_frame:
+          Value: true
+        sensor_imu__link:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        root:
-          arm_base_link:
-            arm1_link:
-              arm2_link:
-                arm3_link:
-                  left_gripper_link:
-                    {}
-                  right_gripper_link:
-                    {}
-          back_left_wheel_link:
-            {}
-          back_right_wheel_link:
-            {}
-          front_left_wheel_link:
-            {}
-          front_right_wheel_link:
-            {}
+        base_footprint:
+          root:
+            arm_base_link:
+              arm1_link:
+                arm2_link:
+                  arm3_link:
+                    left_gripper_link:
+                      {}
+                    right_gripper_link:
+                      {}
+                    sensor_arm_camera_camera_base_link:
+                      sensor_arm_camera_camera_frame:
+                        sensor_arm_camera_camera_optical_frame:
+                          {}
+            back_left_wheel_link:
+              {}
+            back_right_wheel_link:
+              {}
+            front_left_wheel_link:
+              {}
+            front_right_wheel_link:
+              {}
+            sensor_front_camera_camera_base_link:
+              sensor_front_camera_camera_frame:
+                sensor_front_camera_camera_optical_frame:
+                  {}
+            sensor_imu__link:
+              {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: root
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -221,25 +283,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 10.979081153869629
+      Distance: 9.805200576782227
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.0457618348300457
-        Y: -0.07058511674404144
-        Z: 0.49734944105148315
+        X: 0.24733586609363556
+        Y: 0.6073669195175171
+        Z: -0.03283866494894028
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5753982067108154
+      Pitch: 0.09039865434169769
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.5653976202011108
+      Yaw: 0.3704029321670532
     Saved: ~
 Window Geometry:
   Displays:

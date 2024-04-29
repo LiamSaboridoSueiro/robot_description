@@ -314,4 +314,11 @@
       <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
     </xacro:sensor_imu>
 
+    <link name="base_footprint"/>
+    <joint name="base_footprint_joint" type="fixed">
+      <origin xyz="0 0 1.9" rpy="0 0 0"/>
+      <parent link="base_footprint"/>
+      <child link="root"/>
+    </joint>
+
   </robot>
