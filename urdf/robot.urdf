@@ -302,4 +302,16 @@
       <limit lower="0" upper="0.35" effort="0" velocity="0"/>
     </joint>
 
+    <xacro:include filename="$(find robot_description)/urdf/sensors/sensors.urdf.xacro"/>
+
+    <xacro:sensor_camera node_name="arm_camera" node_namespace="robot" frame_prefix="sensor_arm_camera_" parent="arm3_link" >
+      <origin xyz="0.0 0.0 0.0" rpy="0 3.141592 0"/>
+    </xacro:sensor_camera>
+    <xacro:sensor_camera node_name="front_camera" node_namespace="robot" frame_prefix="sensor_front_camera_" parent="root" >
+      <origin xyz="1.5 0.0 -0.01" rpy="0 3.141592 0"/>
+    </xacro:sensor_camera>
+    <xacro:sensor_imu ns="robot" prefix="sensor_imu_" parent="root">
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </xacro:sensor_imu>
+
   </robot>
