@@ -223,7 +223,7 @@
     </link>
 
     <joint name="arm1_joint" type="revolute">
-      <origin xyz="-0.053901 0 0.102658" rpy="1.570796 1.570796 0"/>
+      <origin xyz="0.053901 0 0.102658" rpy="-1.570796 1.570796 0"/>
       <parent link="arm_base_link"/>
       <child link="arm1_link"/>
       <axis xyz="0 0 1.0"/>
@@ -231,7 +231,7 @@
     </joint>
 
     <joint name="arm2_joint" type="revolute">
-      <origin xyz="-1.544378 -0.000489 -0.000415" rpy="0 0 0"/>
+      <origin xyz="-1.544378 -0.000489 0.000415" rpy="0 0 0"/>
       <parent link="arm1_link"/>
       <child link="arm2_link"/>
       <axis xyz="0 0 1.0"/>
@@ -247,7 +247,7 @@
     </joint>
 
     <joint name="arm_base_joint" type="revolute">
-      <origin xyz="-1.24578 0 0.535008" rpy="0 0 0"/>
+      <origin xyz="1.24578 0 0.535008" rpy="0 0 0"/>
       <parent link="root"/>
       <child link="arm_base_link"/>
       <axis xyz="0 0 1.0"/>
