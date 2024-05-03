@@ -2,86 +2,6 @@
 <!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
   <robot name="robot" xmlns:xacro="http://wiki.ros.org/xacro">
 
-    <link name="arm1_link">
-      <inertial>
-        <origin xyz="-0.779335 0.005967 0" rpy="0 0 0"/>
-        <mass value="5.0"/>
-        <inertia ixx="1.4e-05" ixy="0" ixz="0" iyy="0.000977" iyz="0" izz="0.000977"/>
-      </inertial>
-      <visual name="arm_link_1">
-        <origin xyz="-0.779334 0.005967 0" rpy="-1.570796 0 1.570796"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.001.dae" scale="0.1 0.1 0.705"/>
-        </geometry>
-      </visual>
-      <collision name="arm_link_1.000">
-        <origin xyz="-0.760953 0.005967 0" rpy="-1.570796 0 1.570796"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.006.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="arm2_link">
-      <inertial>
-        <origin xyz="0.017925 -0.592337 0" rpy="0 0 0"/>
-        <mass value="5.0"/>
-        <inertia ixx="8.6e-05" ixy="0" ixz="0" iyy="0.000735" iyz="-5.2e-05" izz="0.003036"/>
-      </inertial>
-      <visual name="arm_link_2">
-        <origin xyz="0.017929 -0.592337 0" rpy="-1.570796 0 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.002.dae" scale="0.1 0.1 0.558064"/>
-        </geometry>
-      </visual>
-      <collision name="arm_link_2.000">
-        <origin xyz="0.017925 -0.631144 0" rpy="-1.570796 0 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.008.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="arm3_link">
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="5.0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <visual name="copiajiji">
-        <origin xyz="0.071644 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.003.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </visual>
-      <collision name="copiajiji">
-        <origin xyz="0.084703 0 -0.144092" rpy="0 0 0"/>
-        <geometry>
-          <box size="0.19 0.96 0.126901"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="arm_base_link">
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="5.0"/>
-        <inertia ixx="0.02356" ixy="0" ixz="0" iyy="0.074462" iyz="0" izz="0.000248"/>
-      </inertial>
-      <visual name="base_arm.001">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.dae" scale="0.3 0.4 0.1"/>
-        </geometry>
-      </visual>
-      <collision name="base_arm.001.000">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cylinder.004.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
     <link name="back_left_wheel_link">
       <inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -162,46 +82,6 @@
       </collision>
     </link>
 
-    <link name="left_gripper_link">
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="2.0"/>
-        <inertia ixx="1e-05" ixy="0" ixz="0" iyy="0.005227" iyz="-5e-05" izz="7e-06"/>
-      </inertial>
-      <visual name="left_gripper.001">
-        <origin xyz="0 0 0" rpy="0 1.570796 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cube.006.dae" scale="0.05 0.375 0.1"/>
-        </geometry>
-      </visual>
-      <collision name="left_gripper.001.000">
-        <origin xyz="-1e-06 0.031252 0.027385" rpy="0 1.570796 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cube.055.dae" scale="1.0 1.0 1.000001"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="right_gripper_link">
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="2.0"/>
-        <inertia ixx="1e-05" ixy="0" ixz="0" iyy="0.005227" iyz="-5e-05" izz="7e-06"/>
-      </inertial>
-      <visual name="right_gripper.001">
-        <origin xyz="0 0 0" rpy="0 1.570796 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cube.004.dae" scale="0.05 0.375 0.1"/>
-        </geometry>
-      </visual>
-      <collision name="right_gripper.001.000">
-        <origin xyz="0 0.031252 0.027385" rpy="0 1.570796 0"/>
-        <geometry>
-          <mesh filename="file://$(find robot_description)/meshes/dae/Cube.056.dae" scale="1.0 1.0 1.000001"/>
-        </geometry>
-      </collision>
-    </link>
-
     <link name="root">
       <inertial>
         <origin xyz="0 0 -3e-06" rpy="0 0 3.14159"/>
@@ -221,38 +101,6 @@
         </geometry>
       </collision>
     </link>
-
-    <joint name="arm1_joint" type="revolute">
-      <origin xyz="0.053901 0 0.102658" rpy="-1.570796 1.570796 0"/>
-      <parent link="arm_base_link"/>
-      <child link="arm1_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.2" upper="2.0" effort="0" velocity="0"/>
-    </joint>
-
-    <joint name="arm2_joint" type="revolute">
-      <origin xyz="-1.544378 -0.000489 0.000415" rpy="0 0 0"/>
-      <parent link="arm1_link"/>
-      <child link="arm2_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-3.0" upper="1.5" effort="0" velocity="0"/>
-    </joint>
-
-    <joint name="arm3_joint" type="revolute">
-      <origin xyz="-0.049108 -1.19983 0.000415" rpy="-1.570796 0 0"/>
-      <parent link="arm2_link"/>
-      <child link="arm3_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-3.0" upper="3.0" effort="0" velocity="0"/>
-    </joint>
-
-    <joint name="arm_base_joint" type="revolute">
-      <origin xyz="1.24578 0 0.535008" rpy="0 0 0"/>
-      <parent link="root"/>
-      <child link="arm_base_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-3.0" upper="3.0" effort="0" velocity="0"/>
-    </joint>
 
     <joint name="back_left_wheel_joint" type="continuous">
       <origin xyz="-1.724564 -0.893577 -1.584369" rpy="1.570796 0 0"/>
@@ -286,27 +134,8 @@
       <limit effort="0" velocity="0"/>
     </joint>
 
-    <joint name="left_gripper_joint" type="prismatic">
-      <origin xyz="0.087528 -0.448158 -0.546057" rpy="-1.570796 0 0"/>
-      <parent link="arm3_link"/>
-      <child link="left_gripper_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="0" upper="0.35" effort="0" velocity="0"/>
-    </joint>
-
-    <joint name="right_gripper_joint" type="prismatic">
-      <origin xyz="0.087528 0.448158 -0.546057" rpy="-1.570796 0 -3.141593"/>
-      <parent link="arm3_link"/>
-      <child link="right_gripper_link"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="0" upper="0.35" effort="0" velocity="0"/>
-    </joint>
-
     <xacro:include filename="$(find robot_description)/urdf/sensors/sensors.urdf.xacro"/>
 
-    <xacro:sensor_camera node_name="arm_camera" node_namespace="robot" frame_prefix="sensor_arm_camera_" parent="arm3_link" >
-      <origin xyz="0.0 0.0 0.0" rpy="0 3.141592 0"/>
-    </xacro:sensor_camera>
     <xacro:sensor_camera node_name="front_camera" node_namespace="robot" frame_prefix="sensor_front_camera_" parent="root" >
       <origin xyz="1.5 0.0 -0.01" rpy="0 3.141592 0"/>
     </xacro:sensor_camera>
