@@ -150,4 +150,10 @@
       <child link="root"/>
     </joint>
 
+    <!-- Gazebo ros control plugins-->
+    <xacro:arg name="config_controllers" default="$(find robot_description)/config/rover_controller.yaml"/>
+    <xacro:arg name="update_rate" default="100"/>
+    <xacro:include filename="$(find robot_description)/urdf/ros2_control.urdf.xacro"/>
+    <xacro:ros2_control/>
+
   </robot>
