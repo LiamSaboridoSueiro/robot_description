@@ -24,3 +24,13 @@ Se puede acceder a los rosbags en la carpeta "[rosbags](https://github.com/LiamS
 [floor.webm](https://github.com/LiamSaboridoSueiro/robot_description/assets/113594770/8d7c536c-1278-469b-96b0-9484ff342003)
 
 [sand.webm](https://github.com/LiamSaboridoSueiro/robot_description/assets/113594770/b4ed3be6-b6cd-4b8f-8c49-7c665e88a38e)
+
+## Video parte A
+
+
+
+https://github.com/LiamSaboridoSueiro/robot_description/assets/113594770/9b1ffd2c-7218-4620-8dd5-b50df92540d6
+
+
+
+
