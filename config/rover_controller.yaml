@@ -9,11 +9,11 @@ controller_manager:
 rover_base_control:
   ros__parameters:
     left_wheel_names:
-      - front_left_wheel_joint
-      - back_left_wheel_joint
-    right_wheel_names:
       - front_right_wheel_joint
       - back_right_wheel_joint
+    right_wheel_names:
+      - front_left_wheel_joint
+      - back_left_wheel_joint
     wheel_separation: 1.90
     wheel_radius: 0.30
     wheel_separation_multiplier: 1.0
