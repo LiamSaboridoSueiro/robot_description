@@ -18,3 +18,9 @@ La gráfica muestra una comparación entre las velocidades de las ruedas del rob
 La gráfica muestra la aceleración lineal del robot en el eje X, registrada por el sensor IMU. Los picos y caídas abruptas en la aceleración indican momentos de impacto, especialmente notable alrededor del segundo 6 y el segundo 10, donde se observan cambios significativos en los valores de aceleración, señalando los choques con los cubos en los distintos mundos simulados.
 
 Se puede acceder a los rosbags en la carpeta "[rosbags](https://github.com/LiamSaboridoSueiro/robot_description/tree/main/rosbags)" del repositorio.
+
+## Vídeos
+
+[floor.webm](https://github.com/LiamSaboridoSueiro/robot_description/assets/113594770/8d7c536c-1278-469b-96b0-9484ff342003)
+
+[sand.webm](https://github.com/LiamSaboridoSueiro/robot_description/assets/113594770/b4ed3be6-b6cd-4b8f-8c49-7c665e88a38e)
